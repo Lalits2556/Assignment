@@ -1,0 +1,1233 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   <style>
+    /* styles.css */
+body {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background-color: #242d58;
+  }
+  
+  nav {
+    /* font */
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    margin-top: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    background: linear-gradient(#2f1893, rgba(47, 24, 147, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/2e9d/962f/4c269f57807850115899b4611a2bf3ba?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hcNWhk8Zok-7F0IC3JeVFaSB0NzRGuquHjQzrktG04x0LE7LSvjMLngBhhcRYoreq4fUwkWUhSKFqhAgEfzRnKFv37YiGndLUB9RDaQ1RtsN3yo~iYkGMmGXasFqO~M6VxhRC04iHC0SQgVY5S0i-mB6tcqQypWKT7FMKunTIw0pktGAaLQ-~YNd5vDkbKlyZx1WFeDN~clZysLKxUoyC1MF0N5kPSqayBi2IEnt8AMz8NL9lWXAn7ViDkaw9wMKUjV5fYozq4lFrDfLNKxZC29Wmxy5kA3u2HVMrrUhSMSYPpoLSn8Ht914LuSsxFrG96lnf-vTEMe8iuvfVhFq3w__)
+        no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .carousel {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slide {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .slide h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .slide p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .slide h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.29px;
+    text-align: center;
+  }
+  .content-btn {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+  
+    background: #182be7;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    width: 230px;
+    height: 60px;
+    border-radius: 100px;
+  }
+  
+  button:hover {
+    background: #257ab8;
+  }
+  
+  /* section 2 */
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: linear-gradient(#2f1893, rgba(47, 24, 147, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/495a/76ab/fa6125a690a426b8fcb3bbfd55392e02?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KxvCHOKGfLapMkZrCdRuTGMT3kjDHEEMRPMpmJnmB5c0cUbiaGWqLivzjorspSJkiVdG4y-yGP8fTnAKFppFjnJJSE-iu91bKgAS1K20GDBtFP9lgc54h90RihOKy9z9Dy6x3KlDBpwN-rQgnPkvXkWeq3sRMRIe-lJSJ5OK4JcZLKPFvrpEKe26QoaiVXhCH4dv-P3TzjZ-t1Pg~oYa9QomPrzmSEYc2rkSH50sf9Iu6Trrbc2asdptx~0M3TcvSgUGJGE2KoGJe66lItE4uXQlVNb6Wvm2-0i~Dydqi4bTQgl-ab89gVwHaKBK36t2oq1hpLyfoE5Sgx-~RQ1mLQ__)
+        no-repeat center center/cover;
+  
+    position: relative;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .section-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+  }
+  
+  .section h3 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+  
+  .section h1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  
+  .section p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  /* section-features */
+  /* Section Three */
+  .section-three {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#1F1893, rgba(74, 61, 132, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/cd87/98ea/9e781bdf0627ed8d9186867e7b1d6a53?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dpo3x~z3ZhNHjyIoSlEd42f7Ze66Il9FS3V0HW9R2-xnhZTswLA8~PtwVOuUsxZjm1amkZ9PwMo308G9mGe-eLd8Y7cIoNP32J3tbAQayXt2fXspNVymXdI8tQE6IpOSuHHRpvV21vWdbjiPdZa43QQllrRjwTzxrzJbFQxv9XZpw7ub9~KmRm1XJZQWUYDVdNE7cFzOjYYWkkHsqrF8jXffDnw7GTN3Brf0Sgc9Pbe61zNlzTrgX0QFr6M3IpHn8qTBnk0kmPTat4C0sJNRps5orshi2zDR5sTowiwzmgkhWU-AgdpXdfdH1Jaz8LFKwMvvjJ9yfI5H01lhC1k1IA__)
+        no-repeat center center/cover;
+  
+    height: 100vh;
+    padding: 50px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .content {
+    position: relative;
+    max-width: 700px;
+    z-index: 2;
+  }
+  
+  h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* problem start from here */
+  
+  /* Features Section */
+  .section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 736px;
+    width: 100%;
+  }
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    align-items: center;
+  }
+  .content {
+    position: relative;
+  
+    left: -350px;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .laptop {
+    position: relative;
+    left: -140px;
+    top: 300px;
+  }
+  .laptop-1 {
+    position: relative;
+    left: -50px;
+  }
+  .laptop-screen {
+    width: 733px;
+    height: 480px;
+    position: relative;
+    top: -525px;
+    left: -290.89px;
+    border-radius: 4.04px;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .feature img {
+    align-self: start;
+    width: 50px;
+    margin-right: 15px;
+  }
+  .content p {
+    display: flex;
+    text-align: left;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  .content h2 {
+    text-align: justify;
+  }
+  .feature p {
+    display: flex;
+    align-items: start;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0px;
+  }
+  h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  
+  /* problem Ends Here */
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    background: linear-gradient(#1F1893, rgba(109, 105, 128, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/495a/76ab/fa6125a690a426b8fcb3bbfd55392e02?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KxvCHOKGfLapMkZrCdRuTGMT3kjDHEEMRPMpmJnmB5c0cUbiaGWqLivzjorspSJkiVdG4y-yGP8fTnAKFppFjnJJSE-iu91bKgAS1K20GDBtFP9lgc54h90RihOKy9z9Dy6x3KlDBpwN-rQgnPkvXkWeq3sRMRIe-lJSJ5OK4JcZLKPFvrpEKe26QoaiVXhCH4dv-P3TzjZ-t1Pg~oYa9QomPrzmSEYc2rkSH50sf9Iu6Trrbc2asdptx~0M3TcvSgUGJGE2KoGJe66lItE4uXQlVNb6Wvm2-0i~Dydqi4bTQgl-ab89gVwHaKBK36t2oq1hpLyfoE5Sgx-~RQ1mLQ__)
+        no-repeat center center/cover;
+    overflow: hidden;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-wrap: wrap;
+    max-width: 500px;
+    height: 208px;
+    text-align: left;
+    padding-right: 50px;
+  
+    margin: 0px 0px 0px 50px;
+  }
+  
+  .left h1 {
+    text-align: center;
+    text-wrap: balance;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+  }
+  
+  .left p {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+  
+    text-wrap: balance;
+    text-align: center;
+  }
+  
+  .right {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-box {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 30px;
+  }
+  
+  .tabs span {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #999;
+  }
+  
+  .tabs .active {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  
+  input {
+    width: 100%;
+    padding: 20px 10px 20px 10px;
+    margin: 30px 0px 30px 0px;
+    border: 1px solid grey;
+    border-radius: 50px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .signup-btn {
+    background-color: #2ea1f2;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .twitter-btn {
+    background-color: #2ea1f2;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .separator {
+    margin: 15px 0;
+    color: #999;
+  }
+  
+  /* four */
+  
+  .four {
+    background-color: #1F1893;
+    padding: 50px;
+    overflow: hidden;
+  }
+  
+  .title {
+    display: flex;
+    align-self: self-start;
+    font-size: 36px;
+    font-weight: bold;
+  
+    padding: 10px 20px;
+    margin: 60px 0px 60px 250px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .card {
+    background: rgba(24, 47, 147, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .card img {
+    display: flex;
+    align-self: start;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .card p {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+    opacity: 0.7;
+  }
+  .card span {
+    display: flex;
+    align-self: self-start;
+  }
+  .five {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#1F1893, rgba(74, 61, 132, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/1269/76cf/680db86b7d6d1e508870cf2887a79864?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=i-ctFzym7J1WZg9iTNLR4-PTynrxXCaST5HA7dPn214kebMhs0rBKfvILLEwzzdaS5OTRbeftMXI412Zkic2LIoXlxwIdDDK~ng4139D9M8ycN1cyt5ChyK5MeQB5XD6locYNRCP6wVHN9IsPx7FmlRl4LfiLpqUGVJIaNlO7DIju6YOPesEZbI2hnMWTQUYEkVNFxEf1-ro59mXFIghe8yySwhjJvTCozEkCNyVMlvcR1xnXW-qIcRYcJ-2ihZ7Knl5fTxPjV312~zZsL3sLZYKcvQKGxHcQyEPFv1hsksQB42XsYeVOd13nXCTWHPTpSMBhIkluHZarNxBkMNKPQ__)
+        no-repeat center center/cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .five p {
+    text-align: center;
+    text-wrap: balance;
+    width: 500px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .five h1 {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 6px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .four-icons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 400px;
+  }
+  .four-button {
+    width: 300px;
+    background-color:#1F1893;
+  }
+  
+  .last-work{
+      background-color: #1F1893;
+  }
+  .last-work h1{
+    
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+  
+  
+  }
+  .last-work .view-btn{
+    width: 170px;
+   height: 50px;
+    display: flex;
+    align-self: center;
+  
+   padding: 10px auto 10px auto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  
+  
+  }
+  .view-btn{
+      width: 100px;
+  }
+  .lastwork-heading{
+      width:970px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between  ;
+  }
+  .lastwork-card{
+      width: 470px;
+  height: 371px;
+  
+  border-radius: 10px;
+  
+  }
+  .lastwork-card img{
+      width: 470px;
+  height: 280px;
+  
+  border-radius: 10px;
+  
+  }
+  .lastwork-flex{
+      margin: auto;
+      margin-top: 30px;
+      gap: 30px;
+      width: 970px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .team{
+      margin-top: 50px;
+      background-color: #1F1893;
+      display: flex;
+      flex-direction:column ;
+      width: 100%;
+      height: 100vh;
+     
+  }
+  .team h2{
+    
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+  
+    margin-top: 30px;
+    text-align: start;
+    width: 764px;
+    margin: auto;
+  }
+  .team p{
+      width: 764px;
+      margin: auto;
+      text-align: start;
+  }
+  .team-flex{
+   
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      width: 764px;
+      margin: auto;
+  }
+  .team-card{
+      width: 174px;
+  }
+  .team-card h4{
+      display: flex;
+      align-self: flex-start;
+  }
+  .team-card h5{
+      display: flex;
+      align-self: flex-start;
+  }
+  .social-handle{
+      display: flex;
+      align-self: self-start;
+      justify-content: space-between;
+  }
+  .team-image{
+      width: 100px;
+    border-radius: 150px;
+    display: flex;
+    align-self: self-start;
+  }
+  .contact-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 80px 20px;
+      max-width: 1200px;
+      width: 100%;
+      height: 100vh;
+      margin: 0 auto;
+      background: linear-gradient(#4b46b6, rgba(90, 84, 129, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/801b/8400/03ba21507c4e4e0df1ee626da6fc2a65?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K2w2RUWUGlj8HZnyPEEorj8EQZsc6xmY6VVDTFM~dxkiw7ZRnPowytJ5AHAniCHWEIZBm651G3Ci7kypvWrLQyzNYG4paLG9~~DpLFMhoQBR-hy~T1pAF6PNbubV7jcVnYWsjvAA6TrpktmK4d~cTn8JpSRcSEMIdMoJIAlUBWvEZWsRdROprDbVI2c9cZGl6C-Vku3-5c43vu1sIEfLTJxTihOKnZYXI3lS3idwlI4zqtLsLODvGCtTqD0EJXUnj7S95A7bULNWy6mej6QOrb9-1fyqSCS-ZqWrlj6wkFuImuGyJORF61B-qFg8QECT4giJNsCBvV1UQrXvguEF-w__)
+        no-repeat center center/cover;
+    }
+    .contact-text {
+      max-width: 400px;
+    }
+    .contact-text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .contact-text p {
+      margin-bottom: 20px;
+      color: #d1d5db;
+    }
+    .contact-text .info {
+      margin-bottom: 10px;
+    }
+    .contact-text .info i {
+      margin-right: 10px;
+    }
+    .contact-form {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      color: #1f2937;
+    }
+    .contact-form label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: block;
+      text-transform: uppercase;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      background-color: #f9fafb;
+    }
+    .contact-form .row {
+      display: flex;
+      gap: 10px;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+    .checkbox input {
+      margin-right: 10px;
+    }
+    .contact-form button {
+      background-color: #2dd4bf;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #14b8a6;
+    }
+  
+    .overlay-a{
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .pricing-section {
+      position: relative;
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(#37337c, rgba(128, 119, 191, 0.5)),
+      url(https://s3-alpha-sig.figma.com/img/c722/e855/deb2b6cea2cae4307bf9b64408da515d?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=AboC~nSYBZ-93ckeqKczibCp52xSC-UnA-3TxL~Dw2H~WEDUEG72lRkOmBV5liJj7OAksW-iTCD37pZVQTQrxmuPf4YKAT-V~REKzY5yFPyUSPQuuJUCREunG5sNa-ax~-nIf09ayxzS7IxbL3IDS6jzGvHQi5AZw93vv1jqKhIfQkV5QuGnVNmoZ7c3Z5R5844-jVXAZEajkJX2DIwT8R8SfbbobbqejReaTkl5UV30rsUXdV0z5PrMd69wno3hP514QD1NTAM0ftYJEotNreggPsfDQNT6vifsmvehuIJbowTlbOOWncjOysd5omB70bFhTRjHhq7EJdUE~ttPZQ__)
+        no-repeat center center/cover;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #cbd5e1;
+      max-width: 600px;
+      margin: 0 auto 50px;
+      font-size: 1rem;
+    }
+    .pricing-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 30px 20px;
+      width: 300px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .price sup {
+      font-size: 0.8rem;
+      vertical-align: super;
+    }
+    ul {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      color: #94a3b8;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li.active::before {
+      content: '✔';
+      color: #10b981;
+      position: absolute;
+      left: 0;
+    }
+    .btn {
+      padding: 12px 28px;
+      border-radius: 30px;
+      background: transparent;
+      border: 2px solid #fff;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: white;
+      color: #1f2937;
+    }
+    .btn-pink {
+      background-color: #f472b6;
+      border: none;
+      color: white;
+    }
+    .btn-pink:hover {
+      background-color: #ec4899;
+    }
+    .highlight {
+      border: 2px solid #f472b6;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #2e1ca0;
+      color: white;
+      padding: 40px 20px;
+      font-size: 0.9rem;
+    }
+    .footer-top,
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-line {
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.2);
+      margin: 20px 0;
+    }
+    .footer-nav,
+    .footer-social,
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer a:hover {
+      color: #c3b9ff;
+    }
+   </style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="carousel">
+        <div class="slide active">
+          <h3>Startup 1</h3>
+          <h2>Forget About Code</h2>
+          <p>
+            Startup Framework gives you complete freedom over your creative
+            process — no technical worries. No limits, no coding.
+          </p>
+          <button class="content-btn">Create an Account</button>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-content">
+        <h3>Free Sample</h3>
+        <h1>Powerful Generator and Free Figma Sources</h1>
+        <p>
+          Startup Framework contains components and complex blocks which can
+          easily be integrated into almost any design. All of the components are
+          made in the same style, and can easily be integrated into projects,
+          allowing you to create hundreds of solutions.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-three">
+      <div class="laptop">
+        <img src="laptop.png" style="align-items: start;" alt="" class="laptop-1">
+        <img src="https://s3-alpha-sig.figma.com/img/3566/8c97/e962a0b09bd6f5bc2df3a8d88d4feb8c?Expires=1744588800&amp;Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&amp;Signature=KzCfSWa8roBoQPswnQlzqD1ngJLFCwdfcAg63MWGjbiTb7rJnWJB1HTUjN7NMxvmylRQSIX25o6g2O1ouE2KkRp9z7A2sH-UttCf4ikJNibeteRTzMDUThVqnrz6oGjMWzop11E9AGFzYEoO0dRjsrK0gaCBODWWUL~WGS7r8bDWo2WRyU5jjSBgVED15uplaRXvrWvqm8Eqr1xFSvDrb0r9Y79xEu7tIGNjCbKkWv0vBX3D0xMz~QRYY3T-80i02AC-e9WbjHZGfh1B1Qmiyvs6QYPsbRaPIl8Jln2002YMG-qv4sLd0TAVaibHPOCuLpNDEWkSWFR61XBusJiq-w__" alt="" class="laptop-screen">
+      </div>
+      <div class="content">
+          <h2>We Create Something New</h2>
+          <p>We have created a new product that will help designers, developers, and companies create websites for their startups quickly and easily.</p>
+          <div class="features">
+            <div class="feature">
+              <i class="fas fa-copy"></i>
+              <h4>30 New Feature Pages</h4>
+              <p>Startup Framework contains components and complex blocks which can easily.</p>
+            </div>
+            <div class="feature">
+              <i class="fas fa-gem"></i>
+              <h4>Useful Symbol Components</h4>
+              <p>Samples will show you the feeling on how to play around using the components.</p>
+            </div>
+          </div>
+      </div>
+  </section>
+
+  
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <div class="container">
+        <div class="left">
+            <h1>We solve digital problems with an outstanding creative flare</h1>
+            <p>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+        </div>
+        <div class="right">
+            <div class="form-box">
+                <div class="tabs">
+                    <span class="active">SIGN UP</span>
+                    <span>LOGIN</span>
+                </div>
+                <form>
+                    <input type="email" placeholder="Your email" required="">
+                    <input type="password" placeholder="Your password" required="">
+                    <button class="signup-btn">Create an Account</button>
+                    <div class="separator">or</div>
+                    <button class="twitter-btn">Login via Twitter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="four">
+      <h1 class="title">Our Happy Clients</h1>
+      <div class="grid-container">
+          <div class="card">
+              <img src="https://s3-alpha-sig.figma.com/img/cff8/bdd8/96f5730df623c29a513f900e76096e77?Expires=1744588800&amp;Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&amp;Signature=UVbXUX2ha8a5FokLRxNFPC~s6ugu8D8Xq2Bg4mkKdxHKpSqx36WqVssYo5t9EGgDjMiCXskAWC6UstzVmqVGOsyKoZZEUF1fVp8Pf9-waUw5xSbfdQZbsSCC3lko6RuDI3HNgXl7XLRc3PUfQ2hXzdGh8o7NST7fkYm9-ISKIfuHv7Ru6PkKEhEBJvpPY56~dPLMGU6BtQBf1~o8ZcKacv3RWOEd9grTdgwVAzxtCrieybTyH0gwNz39f6XwKLtBayd0DQBi1KDohdeJButde7toJQqi077Cgo~lYTB4C5unRCOlGY3J9Hr8MS9~jBQ56G4dqjwL-RO4vBfsXPPNMg__" alt="Rayhan Curran">
+              <p>Get a fully retina ready site when you build with Startup Framework. Websites look sharper and more gorgeous on devices with retina display support</p>
+              <span class="name">RAYHAN CURRAN</span>
+          </div>
+          <div class="card">
+              <img src="https://s3-alpha-sig.figma.com/img/bb2f/5c77/0a77c77bf6142b6543f039c7ac3556f6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=I302Kytq8ZgGmnNKxtq-N1h-Z0izLixzVZvyTmLDJnGlHrjz9y1iLpXRhOVwpASXRQ2cWW~CPzvnXN~BOQhxX64THILcogiVRvgPkWztEynwk0WBsVPmLoueeZduwmX0~LX5lRccwMUtqrs-v1-d1-XDrs~Az96Ckq7biBpTp32huJap4Q~g~JKm-FmPZYb35AdP6ClIktPeJJ7CKIUnizwVjFgbDK-Y-qd0REuR7CIGUVexBS3pdIKApd3-KlFl7Hzb7LooxBmHRLpSsc9aZs~JlFPiJEmTtL05xU1xO6xIImRn42RL4PSDrYPY95WCSKrR8shOihm01gvLQgUzxQ__" alt="Kayley Frame">
+              <p>As a business targeting high net worth individuals, we were looking for a slick, cool and mini-malistic design for our website</p>
+              <span class="name">KAYLEY FRAME</span>
+          </div>
+          <div class="card">
+              <img src="https://s3-alpha-sig.figma.com/img/9b2d/668b/00abeae165aff03b0044744ba81357af?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FPy5fvIygluuSbMMUu2hFBy5Nxoqb-1olb36S60sLecuHVeXSXsQyFK5T2niNvMDpHAFMl3xHgRJYWsQyy0N3jhHQRMsQuvn7clfuORi1d95PL7DdGOp1-jZEl5TcSokqcQ1SAzU-zSX8QI7~1Jg4BNVtMXT5aX2xG-leH35fQWIvzoc6KNpuT7NVMnby2T6ewGcrNjT29xj-htQg6V1szffDLHhRRougwLIvljuKZpqB6HKQsOhh2oDh98tnOOWZ~cQscmWayBXlh2k2CbHYFNnJ0LGTVz7xpIF-CvB1rPExx~7ggtha0bEr0G~JG~QJR1ecXelXmSs6K~ctDGcEg__" alt="Gene Whitfield">
+              <p>The most important part of the Startup Framework is the samples</p>
+              <span class="name">GENE WHITFIELD</span>
+          </div>
+          <div class="card">
+              <img src="https://s3-alpha-sig.figma.com/img/3f6f/38f6/1d39e8c7b1c070e5a7f1b9bd6a0f35fe?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R9aKdMs-pBsecDReEmorIiGyC7-Llp5aWhSO6fxQjaZtHnG-8NMbNluN6Xcr6Gnp-PFTt2i8hVsSnexmK7XTqnV8IAH-BvgrPxdRLfG7dG~oS82iPACVaP345~dpqN9CuSWgWW9maYgDb3j9T9IJgzES9ojO~yj9WX3Gl1KjmuIYyuj06ltvMwXSrT-bJt7cwOH7j54ymMZEm44lDav9DMy8Xv-fZ-9yBeHTWBIjJIa0FxVg8vK~-MbkH3KqG~kB3K8qCUraLuUlD036IP6D6LGD0ugk6cs9iCThFX-SomN4r2PTQN9QA94S9Q1~r-lLdPa4xrz718y4~U8TBKKD-Q__" alt="Allan Kim">
+              <p>I’ve built my website with Startup just in one day, and it was ready-to-go.</p>
+              <span class="name">ALLAN KIM</span>
+          </div>
+      </div>
+  </section>
+  <section class="five">
+    <h1>EASY TO SETUP.</h1>
+    <h1>EASY TO MAINTAIN</h1>
+    <p>Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework for faster and easier web development.</p>
+    <div class="four-icons">
+      <img src="Icon - Fill.png" alt="">
+      <button class="four-button"> Get Started</button>
+    </div>
+  </section>
+  <section class="last-work">
+    <div class="lastwork-heading">
+      <h1>Last Work</h1>
+      <button class="view-btn">View all</button>
+    </div>
+    <div class="lastwork-flex">
+      <div class="lastwork-card">
+        <img src="https://s3-alpha-sig.figma.com/img/0473/f69d/784b36f7f86dce0c85f1d1dd2bc46f50?Expires=1744588800&amp;Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&amp;Signature=suejMVRKbKkAa76112q1YzMY3AV5wvFqeTbT~1hSOku7efLhaHHHRDqGikmjfK9dy6oRmAV-imfb5QB79l6JMAACSqg0FSADVSBj0j9S5fcoCMHCUIPVJ157NfzRAlWt0pl9pzUmj9LcdfCCbgN-UaoAplldyJfmdEskC~jSKZNvCHQvdkigjhZglVQgfQyO3JPq-6uwkNdE6IYmFMEkd1x5uPX4~JEfoxr6SeIu36B2qT4xLAgYaFRUzrUhec8nvzEfoqElCw55kDEiWWvz0-J3a~0IwvccLXCBKQmUeB97yWI3wZM78SLugfdM9bKov4M4YU~SqGyNeCSXATm3~A__" alt="">
+        <h6>UI KIT</h6>
+        <h4>Mozart Project</h4>
+      </div>
+      <div class="lastwork-card">
+        <img src="https://s3-alpha-sig.figma.com/img/1460/2bf9/1a2ee33c171f39337a5b71e42c42b387?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=BU5dTz5g26~F19bs9GHFdOc2xhI9fBzvxBwcmNRVujIhwC7tZjrijU4t8X-qDtIBTcX7gQfH8JETwuawlsOJhxSlaWgtQGYNkG46m~hfXI42lpr7GBhUFbPfRATjENH1tcKdQ~SKkEviN5T2u6WX~JhLDHZCabn4oZSkLLVQSE85fsl5lKWUAHvNnd6~QSiLTOJBa4i9VSY0Hnx-ZxVMPwNZ6O-5eiTWjkooSKI4qguGpf8133GaMu0A4uELZHFJc309g1KCg~Jl0QPNxzJGa8YYAmwJMLX4TjKmBcHVXDeIuPYht9Qt5BsXC6YewCQPR1usWe~E87s4slZTjKewlg__" alt="">
+        <h6>UI KIT</h6>
+        <h4>Mozart Project</h4>
+      </div>
+      <div class="lastwork-card">
+        <img src="https://s3-alpha-sig.figma.com/img/e08f/26b3/dccd6dbe720b42e9b0413e3a873d2883?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=SQxhGHMtEBZp7H2s50GBHPEia~yGZOXP1MPsQvpNHMcIDsuG~F83P0za79CNWIRZwVoMqiZ7OMmr-OF0CBz-f6aX9KCXHZKu9zMvdaXKgyisOrN5xD9xoMCgjn7op9nyyULexsX2kU5B7Fw9xamWANwP7d5hNEVexsuHrTbMqUm1fVMr590jpN0VxO94VDXDNXxW410rlMJmJRjB3xEAlkPHbwIv4NcnpPFz27ZqYtHRapEMvX2z9ZDjlIJCmncR6NJ4aTIzgIfUfwJBDuAKdS6WYAGZa3AAmXje-zYdZNltkNxLSFvWD28pbQLNTqyJgVJ66sm5XqS0zF~I5oJp6A__" alt="">
+        <h6>UI KIT</h6>
+        <h4>Mozart Project</h4>
+      </div>
+      <div class="lastwork-card">
+        <img src="https://s3-alpha-sig.figma.com/img/6092/e136/1b7d6d15b1d01cf0004cb784dcfb12ce?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kLVEKUzGt44WEKkFa8fBpSxKHAGYawCCvnjL6YPj1nxykqcN4KVwuXGdhPGhtzIwlJJ0obfcRhmRxhibfnnF77od6rrID82XWuAVmRS3hMjRKtdnPfU-ghBwIM5T5wwEhGBKEdxNBSyeOT5T9eHDfgSqBASNGiQdzFcInp5ITa3LXuBtBOzJE8j8zTJE0L0moy0u6IGjmpjGAn-vbPzjthKm6YcY1fgV3Hf8swEFCS6KX8TmMAsH1GXDibDxSJTpmhm9f8jZG~zV-ZLfSoFzlHUIHAqWS3exbUq5wgByCrqDTXyE4Xf4KpDiRPwkxAj4aesgf6uQjgh228rlXg65-Q__" alt="">
+        <h6>UI KIT</h6>
+        <h4>Mozart Project</h4>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="team">
+    <h2>Startup Crew</h2>
+    <p>The most important part of the Startup Framework is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks from UI Kit.</p>
+
+    <div class="team-flex">
+     <div class="team-card">
+      <img class="team-image" src="https://s3-alpha-sig.figma.com/img/cff8/bdd8/96f5730df623c29a513f900e76096e77?Expires=1744588800&amp;Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&amp;Signature=UVbXUX2ha8a5FokLRxNFPC~s6ugu8D8Xq2Bg4mkKdxHKpSqx36WqVssYo5t9EGgDjMiCXskAWC6UstzVmqVGOsyKoZZEUF1fVp8Pf9-waUw5xSbfdQZbsSCC3lko6RuDI3HNgXl7XLRc3PUfQ2hXzdGh8o7NST7fkYm9-ISKIfuHv7Ru6PkKEhEBJvpPY56~dPLMGU6BtQBf1~o8ZcKacv3RWOEd9grTdgwVAzxtCrieybTyH0gwNz39f6XwKLtBayd0DQBi1KDohdeJButde7toJQqi077Cgo~lYTB4C5unRCOlGY3J9Hr8MS9~jBQ56G4dqjwL-RO4vBfsXPPNMg__" alt="">
+      <h4>Salmon Bhai</h4>
+      <h5>UI Designer</h5>
+      <div class="social-handle">
+        <img src="twitter.png" alt="">
+        <img src="twitter.png" alt="">
+        <img src="twitter.png" alt="">
+        <img src="facebook.png" alt="">
+      </div>
+     </div>
+     <div class="team-card">
+      <img class="team-image" src="https://s3-alpha-sig.figma.com/img/bb2f/5c77/0a77c77bf6142b6543f039c7ac3556f6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=I302Kytq8ZgGmnNKxtq-N1h-Z0izLixzVZvyTmLDJnGlHrjz9y1iLpXRhOVwpASXRQ2cWW~CPzvnXN~BOQhxX64THILcogiVRvgPkWztEynwk0WBsVPmLoueeZduwmX0~LX5lRccwMUtqrs-v1-d1-XDrs~Az96Ckq7biBpTp32huJap4Q~g~JKm-FmPZYb35AdP6ClIktPeJJ7CKIUnizwVjFgbDK-Y-qd0REuR7CIGUVexBS3pdIKApd3-KlFl7Hzb7LooxBmHRLpSsc9aZs~JlFPiJEmTtL05xU1xO6xIImRn42RL4PSDrYPY95WCSKrR8shOihm01gvLQgUzxQ__" alt="">
+      <h4>Colin Timmons</h4>
+      <h5>UI Designer</h5>
+      <div class="social-handle">
+        <img src="twitter.png" alt="">
+        <img src="facebook.png" alt="">
+      </div>
+     </div>
+     <div class="team-card">
+      <img class="team-image" src="https://s3-alpha-sig.figma.com/img/9b2d/668b/00abeae165aff03b0044744ba81357af?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FPy5fvIygluuSbMMUu2hFBy5Nxoqb-1olb36S60sLecuHVeXSXsQyFK5T2niNvMDpHAFMl3xHgRJYWsQyy0N3jhHQRMsQuvn7clfuORi1d95PL7DdGOp1-jZEl5TcSokqcQ1SAzU-zSX8QI7~1Jg4BNVtMXT5aX2xG-leH35fQWIvzoc6KNpuT7NVMnby2T6ewGcrNjT29xj-htQg6V1szffDLHhRRougwLIvljuKZpqB6HKQsOhh2oDh98tnOOWZ~cQscmWayBXlh2k2CbHYFNnJ0LGTVz7xpIF-CvB1rPExx~7ggtha0bEr0G~JG~QJR1ecXelXmSs6K~ctDGcEg__" alt="">
+      <h4>Miguel Osborne</h4>
+      <h5>UI Designer</h5>
+      <div class="social-handle">
+        <img src="twitter.png" alt="">
+        <img src="facebook.png" alt="">
+      </div>
+     </div>
+     <div class="team-card">
+      <img class="team-image" src="https://s3-alpha-sig.figma.com/img/3f6f/38f6/1d39e8c7b1c070e5a7f1b9bd6a0f35fe?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=R9aKdMs-pBsecDReEmorIiGyC7-Llp5aWhSO6fxQjaZtHnG-8NMbNluN6Xcr6Gnp-PFTt2i8hVsSnexmK7XTqnV8IAH-BvgrPxdRLfG7dG~oS82iPACVaP345~dpqN9CuSWgWW9maYgDb3j9T9IJgzES9ojO~yj9WX3Gl1KjmuIYyuj06ltvMwXSrT-bJt7cwOH7j54ymMZEm44lDav9DMy8Xv-fZ-9yBeHTWBIjJIa0FxVg8vK~-MbkH3KqG~kB3K8qCUraLuUlD036IP6D6LGD0ugk6cs9iCThFX-SomN4r2PTQN9QA94S9Q1~r-lLdPa4xrz718y4~U8TBKKD-Q__" alt="">
+      <h4>Taylor Simon</h4>
+      <h5>UI Designer</h5>
+      <div class="social-handle">
+        <img src="twitter.png" alt="">
+        <img src="facebook.png" alt="">
+      </div>
+     </div>
+     <div class="team-card">
+      <img class="team-image" src="https://s3-alpha-sig.figma.com/img/ad8b/ed9c/decf110a8875ee9f91007ac763caa1b6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=RRNpp2Rq5Rc39t0w~XmuLeUicKqDIyLQAKqWoOd1wCLyLsCBI41p8FRRhSSf1zWV4~LmItlh20VxTQ9kyfzccOJn8IQ6JlmCqbIzqqX-BmNJNXtpMvWzjOu24fwZ4r7eNnVKttQsEMDMxrOUYePVnQ03KDyIA0k8wRwWwbhMECxQt8p6FRwUHmlSkkY6jPlWss~oNxBL3W-sL5bU2~dv7NCH-hYVh7Zp8KMjoVAG~Br2BxbAjZOoXfOF99z2AgypTLrMPsSRhuGfxW9sEbuBqZXQHLeo33JZ~ncwQ3gHJgteu5t7baaLY7KzGT8WCqMYzvsRF9xKYasJ2zXSb0gGLw__" alt="">
+      <h4>Steven MacAlister</h4>
+      <h5>UI Designer</h5>
+      <div class="social-handle">
+        <img src="twitter.png" alt="">
+        <img src="facebook.png" alt="">
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="contact-section">
+    <div class="contact-text">
+      <h2>Let’s Keep in Touch</h2>
+      <p>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+      <p class="info"><i class="fas fa-phone"></i> +1 555 505 5050</p>
+      <p class="info"><i class="fas fa-envelope"></i> info@designmodo.com</p>
+      <p class="info"><i class="fas fa-building"></i> San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909</p>
+    </div>
+    <form class="contact-form">
+      <div class="row">
+        <div style="flex: 1;">
+          <label>Your Name</label>
+          <input type="text" placeholder="First name">
+        </div>
+        <div style="flex: 1;">
+          <label>Budget</label>
+          <select>
+            <option>$500</option>
+            <option>$1000</option>
+            <option>$2000+</option>
+          </select>
+        </div>
+      </div>
+      <label>Input Field</label>
+      <input type="email" placeholder="name@mail.com">
+      <label>Your Message</label>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <div class="checkbox">
+        <input type="checkbox" id="copy">
+        <label for="copy">Send me a copy</label>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="overlay-a"></div>
+  <section class="pricing-section">
+    <h1 class="title">Plans & Pricing</h1>
+    <p class="subtitle">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
+    <div class="pricing-cards">
+      <div class="card">
+        <h2>Starter</h2>
+        <p class="price">9.99<sup>$</sup></p>
+        <ul>
+          <li class="active">2 GB of space</li>
+          <li class="active">14 days of backups</li>
+          <li class="active">Social integrations</li>
+          <li class="active">Client billing</li>
+          <li>Remote access</li>
+          <li>Custom domain</li>
+          <li>24 hours support</li>
+          <li>Admin tools</li>
+          <li>Collaboration tools</li>
+          <li>User management</li>
+        </ul>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="card highlight">
+        <h2>Professional</h2>
+        <p class="price">19.99<sup>$</sup></p>
+        <ul>
+          <li class="active">2 GB of space</li>
+          <li class="active">14 days of backups</li>
+          <li class="active">Social integrations</li>
+          <li class="active">Client billing</li>
+          <li class="active">Remote access</li>
+          <li class="active">Custom domain</li>
+          <li>24 hours support</li>
+          <li>Admin tools</li>
+          <li>Collaboration tools</li>
+          <li>User management</li>
+        </ul>
+        <button class="btn btn-pink">Get Started</button>
+      </div>
+      <div class="card">
+        <h2>Team</h2>
+        <p class="price">49.99<sup>$</sup></p>
+        <ul>
+          <li class="active">2 GB of space</li>
+          <li class="active">14 days of backups</li>
+          <li class="active">Social integrations</li>
+          <li class="active">Client billing</li>
+          <li class="active">Remote access</li>
+          <li class="active">Custom domain</li>
+          <li class="active">24 hours support</li>
+          <li class="active">Admin tools</li>
+          <li class="active">Collaboration tools</li>
+          <li class="active">User management</li>
+        </ul>
+        <button class="btn">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <strong>Startup 3</strong>
+      <div class="footer-nav">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="#">Tour</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing Plans</a>
+        <a href="#">Our Works</a>
+        <a href="#">Brands</a>
+        <a href="#">Contacts</a>
+      </div>
+      <div>
+        &copy; 2017 Designmodo. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
+
+</body></html>
